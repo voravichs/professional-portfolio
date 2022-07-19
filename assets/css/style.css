@@ -26,6 +26,7 @@ body {
 
 h1 {
     font-size: 5rem;
+    margin: 0 auto;
     padding: 1rem;
 }
 
@@ -43,14 +44,15 @@ header {
 
 nav {
     background-color: var(--blue-green);
-    padding: 0.5rem;
+    width: 100%;
+    padding: 1rem;
 }
 
 .nav-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav li {
@@ -73,7 +75,7 @@ nav li {
 figcaption {
     position: absolute;
     left: 5%;
-    bottom: 6rem;
+    bottom: 5rem;
     text-align: center;
     background-color: var(--grape);
     padding: 1rem;
@@ -112,4 +114,30 @@ a {
 
 .contact-style li {
     margin-bottom: 1.5rem;
+    margin-right: 2rem;
 }
+
+@media screen and (min-width: 768px) {
+    h1 {
+        padding-inline: 10%;
+    }
+
+    .portrait {
+        margin: 1em;
+        height: 20rem;
+        width: 20rem;
+        margin-left: 5rem;
+    }
+
+    figcaption {
+        left: 25rem;
+        top: 1em;
+        bottom: auto;
+    }
+
+    .contact-style {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+  
