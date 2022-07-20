@@ -36,40 +36,41 @@ h2 {
     margin-bottom: 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 3rem;
+    border-bottom: solid var(--orange);
+}
+
 header {
     background-color: var(--grape);
     width: 100%;
     text-align: center;
 }
 
-nav {
-    background-color: var(--blue-green);
-    width: 100%;
-    padding: 1rem;
-}
-
-.nav-row {
+.nav-style {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 1rem 5rem;
+    background-color: var(--blue-green);
+    margin-bottom: 2rem;
 }
 
 nav li {
     font-size: 3rem;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     border-bottom: solid var(--orange);
 }
 
 main {
-    margin: auto 4rem;
+    margin: auto 5rem;
 }
 
 .section-style {
     margin-bottom: 7rem;
-}
-
-.bio {
     display: flex;
     flex-direction: column;
 }
@@ -100,44 +101,30 @@ main {
 }
 
 figure:hover .portrait-caption {
-    opacity: 1;
+    opacity: .8;
 }
 
 .contact-style {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
-}
-
-a {
-    text-decoration: none;
-    color: var(--orange);
-    font-size: 3rem;
-    border-bottom: solid var(--orange);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .contact-style li {
-    margin-bottom: 1.5rem;
-    margin-right: 2rem;
+    padding-bottom: 1.5rem;
+    padding-right: 2rem;
 }
+
 
 @media screen and (min-width: 768px) {
     h1 {
         padding-inline: 10%;
     }
 
-    /*.portrait {
-        margin: 1em;
-        
-        margin-left: 5rem;
-    }*/
-
-    /*figcaption {
-        left: 25rem;
-        top: 1em;
-        bottom: auto;
-    }*/
-
+    /* https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
     .portrait {
         float: left;
         margin-right: 2rem;
@@ -147,11 +134,37 @@ a {
 
     .bio p {
         text-align: justify;
-        margin-right: 2em;
+        margin-right: 2rem;
+    }
+
+    .portrait-caption {
+        bottom: -25rem;
     }
 
     .contact-style {
         flex-direction: row;
         justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .section-style {
+        flex-direction: row;
+        
+    }
+
+    h2 {
+        border-bottom: none;
+        border-right: solid var(--orange);
+        margin-right: 5rem;
+        padding: 2rem;
+        flex: 0 0 200px;
+        text-align: right;
+    }
+
+    .contact-style {
+        padding-block: 5rem;
+        margin-left: 0;
     }
 }
