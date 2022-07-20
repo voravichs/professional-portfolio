@@ -123,7 +123,7 @@ figure:hover .portrait-caption {
 
 .work-panel-caption {
     position: absolute;
-    bottom: 5%;
+    bottom: 4rem;
     text-align: center;
     background-color: var(--peach);
     color: var(--nightsky);
@@ -169,7 +169,7 @@ figure:hover .portrait-caption {
     }
 
     .portrait-caption {
-        bottom: -25rem;
+        bottom: -30rem;
     }
 
     .work-panel-row{
