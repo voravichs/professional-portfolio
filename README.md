@@ -39,3 +39,9 @@ Credit to https://www.sitepoint.com/understanding-and-using-rem-units-in-css/ an
 Credit to https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ to implementation of text wrapping.
 
 The color scheme was drawn from: https://www.canva.com/colors/color-palettes/star-studded-sky/
+
+## Github Deployed Site Link and Repository Link
+
+Github Repository: https://github.com/voravichs/professional-portfolio
+
+Github Pages Deployment: https://voravichs.github.io/professional-portfolio/
