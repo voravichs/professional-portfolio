@@ -25,13 +25,13 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 0 auto;
     padding: 1rem;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     border-bottom: solid var(--orange);
     margin-bottom: 2rem;
 }
@@ -40,7 +40,6 @@ a {
     text-decoration: none;
     color: var(--orange);
     font-size: 3rem;
-    border-bottom: solid var(--orange);
 }
 
 header {
@@ -144,6 +143,10 @@ figure:hover .portrait-caption {
     padding-right: 2rem;
 }
 
+.contact-style a {
+    text-decoration: underline 3px;
+}
+
 
 @media screen and (min-width: 768px) {
     h1 {
@@ -170,7 +173,7 @@ figure:hover .portrait-caption {
     .small-work-panels {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex: 0 0 100%;
     }
 
     .figure-wrapper {
@@ -185,6 +188,7 @@ figure:hover .portrait-caption {
 
 
 @media screen and (min-width: 992px) {
+    
     .section-style {
         flex-direction: row;
     }
@@ -204,6 +208,6 @@ figure:hover .portrait-caption {
     }
 
     .work-layout {
-        width: 70%;
+        width: 75%;
     }
 }
