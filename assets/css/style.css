@@ -1,10 +1,9 @@
 /* color scheme inspired by https://www.awwwards.com/sites/adult-swim-singles-2016 */
 :root {
-    --earth: #be6850;
-    --blue-green: #85dcba;
-    --orange: #e8a87c;
-    --grape: #a56587;
-    --turquiose: #52a89d;
+    --navyblue: #004961;
+    --indigo: #E9CFF1;
+    --peach: #FFDDA7;
+    --nightsky: #242424;
 }
 
 /* Set root font size, 1 em, to 10px for easier calculation
@@ -20,8 +19,8 @@ body {
 
     font-size: 2rem;
     line-height: 1.5;
-    background-color: var(--turquiose);
-    color: var(--orange);
+    background-color: var(--navyblue);
+    color: var(--peach);
 }
 
 h1 {
@@ -32,18 +31,19 @@ h1 {
 
 h2 {
     font-size: 5rem;
-    border-bottom: solid var(--orange);
+    border-bottom: solid var(--indigo);
+    color: var(--indigo);
     margin-bottom: 2rem;
 }
 
 a {
     text-decoration: none;
-    color: var(--orange);
+    color: var(--indigo);
     font-size: 3rem;
 }
 
 header {
-    background-color: var(--grape);
+    background-color: var(--nightsky);
     width: 100%;
     text-align: center;
 }
@@ -54,14 +54,13 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1rem 5rem;
-    background-color: var(--blue-green);
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 nav li {
     font-size: 3rem;
     padding-inline: 2rem;
-    border-bottom: solid var(--orange);
+    border-bottom: solid var(--peach);
 }
 
 main {
@@ -76,6 +75,7 @@ main {
 
 .bio p {
     margin-left: 2rem;
+    width: 100%;
 }
 
 .figure-wrapper {
@@ -86,14 +86,15 @@ main {
 .portrait {
     height: fit-content;
     width: 100%;
-    border: solid 0.5rem var(--grape);
+    border: solid 0.5rem var(--peach);
 }
 
 .portrait-caption {
     position: absolute;
     bottom: 5%;
     text-align: center;
-    background-color: var(--grape);
+    background-color: var(--peach);
+    color: var(--nightsky);
     padding: 1rem;
     opacity: 0;
     transition: all 0.6s ease;
@@ -111,8 +112,8 @@ figure:hover .portrait-caption {
     flex: 0 0 100%;
     height: 35rem;
     width: 100%;
-    border: solid 4px var(--grape);
-    filter: sepia(0.5);
+    border: solid 4px var(--peach);
+    filter: sepia(0.6);
     margin-bottom: 1rem;
 }
 
@@ -124,7 +125,8 @@ figure:hover .portrait-caption {
     position: absolute;
     bottom: 5%;
     text-align: center;
-    background-color: var(--grape);
+    background-color: var(--peach);
+    color: var(--nightsky);
     padding: 1rem;
     font-size: 3rem;
 }
@@ -144,7 +146,7 @@ figure:hover .portrait-caption {
 }
 
 .contact-style a {
-    text-decoration: underline 3px;
+    text-decoration: underline 3px var(--peach);
 }
 
 
@@ -157,8 +159,8 @@ figure:hover .portrait-caption {
     .portrait {
         float: left;
         margin-right: 2rem;
-        height: 25rem;
-        width: 25rem;
+        height: 30rem;
+        width: 30rem;
     }
 
     .bio p {
@@ -170,10 +172,9 @@ figure:hover .portrait-caption {
         bottom: -25rem;
     }
 
-    .small-work-panels {
+    .work-panel-row{
         display: flex;
         flex-direction: row;
-        flex: 0 0 100%;
     }
 
     .figure-wrapper {
@@ -195,10 +196,10 @@ figure:hover .portrait-caption {
 
     h2 {
         border-bottom: none;
-        border-right: solid var(--orange);
+        border-right: solid var(--indigo);
         margin-right: 5rem;
         padding: 2rem;
-        flex: 0 0 200px;
+        flex: 0 0 225px;
         text-align: right;
     }
 
@@ -208,6 +209,6 @@ figure:hover .portrait-caption {
     }
 
     .work-layout {
-        width: 75%;
+        width: 65%;
     }
 }
