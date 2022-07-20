@@ -8,7 +8,7 @@
 
 /* Set root font size, 1 em, to 10px for easier calculation
     Credit to https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
-    and mini-project 2 for information about implementing em */
+    and mini-project 2 for information about implementing them */
 html {
     font-size: 62.5%;
 }
@@ -16,7 +16,6 @@ html {
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     font-size: 2rem;
     line-height: 1.5;
     background-color: var(--navyblue);
@@ -42,6 +41,8 @@ a {
     font-size: 3rem;
 }
 
+
+/*=== HEADER STYLE ===*/
 header {
     background-color: var(--nightsky);
     width: 100%;
@@ -63,19 +64,22 @@ nav li {
     border-bottom: solid var(--peach);
 }
 
+
+/*=== MAIN STYLE ===*/
 main {
-    margin: auto 5rem;
+    margin: auto 4rem;
+    padding: 1rem;
+    background-color: var(--nightsky);
 }
 
 .section-style {
-    margin-bottom: 7rem;
+    margin-block: 6rem;
     display: flex;
     flex-direction: column;
 }
 
 .bio p {
     margin-left: 2rem;
-    width: 100%;
 }
 
 .figure-wrapper {
@@ -87,6 +91,7 @@ main {
     height: fit-content;
     width: 100%;
     border: solid 0.5rem var(--peach);
+    margin-bottom: 3rem;
 }
 
 .portrait-caption {
@@ -104,6 +109,8 @@ figure:hover .portrait-caption {
     opacity: .8;
 }
 
+
+/*=== WORKS STYLE ===*/
 .works {
     flex-wrap: wrap;
 }
@@ -131,6 +138,8 @@ figure:hover .portrait-caption {
     font-size: 3rem;
 }
 
+
+/*=== CONTACTS STYLE ===*/
 .contact-style {
     margin-left: 2rem;
     display: flex;
@@ -150,6 +159,8 @@ figure:hover .portrait-caption {
 }
 
 
+
+/*=== MEDIA QUERY: TABLET ===*/
 @media screen and (min-width: 768px) {
     h1 {
         padding-inline: 10%;
@@ -158,13 +169,12 @@ figure:hover .portrait-caption {
     /* https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
     .portrait {
         float: left;
-        margin-right: 2rem;
+        margin-inline: 3rem;
         height: 30rem;
         width: 30rem;
     }
 
     .bio p {
-        text-align: justify;
         margin-right: 2rem;
     }
 
@@ -188,6 +198,7 @@ figure:hover .portrait-caption {
 }
 
 
+/*=== MEDIA QUERY: DESKTOP ===*/
 @media screen and (min-width: 992px) {
     
     .section-style {
