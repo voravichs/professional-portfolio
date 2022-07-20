@@ -1,4 +1,4 @@
-/* color scheme inspired by https://www.awwwards.com/sites/adult-swim-singles-2016 */
+/* color scheme drawn from https://www.canva.com/colors/color-palettes/star-studded-sky/ */
 :root {
     --navyblue: #004961;
     --indigo: #E9CFF1;
@@ -6,9 +6,7 @@
     --nightsky: #242424;
 }
 
-/* Set root font size, 1 em, to 10px for easier calculation
-    Credit to https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
-    and mini-project 2 for information about implementing them */
+/* Set root font size, 1 em, to 10px for easier calculation*/
 html {
     font-size: 62.5%;
 }
@@ -96,7 +94,7 @@ main {
 
 .portrait-caption {
     position: absolute;
-    bottom: 5%;
+    bottom: 6%;
     text-align: center;
     background-color: var(--peach);
     color: var(--nightsky);
@@ -166,7 +164,6 @@ figure:hover .portrait-caption {
         padding-inline: 10%;
     }
 
-    /* https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
     .portrait {
         float: left;
         margin-inline: 3rem;
@@ -178,8 +175,13 @@ figure:hover .portrait-caption {
         margin-right: 2rem;
     }
 
+    .section-style {
+        margin-top: 3rem;
+    }
+
     .portrait-caption {
         bottom: -30rem;
+        left: 3rem;
     }
 
     .work-panel-row{
