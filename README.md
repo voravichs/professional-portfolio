@@ -26,7 +26,7 @@ Responsiveness was a large part of this project, and I decided to tackle it mobi
 
 ![tablet screenshot of Voravich Silapahchairueng's portfolio.](./assets/images/tablet.png)
 
-* Mobile (1000 px):
+* Desktop (1000 px):
 
 ![desktop screenshot of Voravich Silapahchairueng's portfolio.](./assets/images/desktop.png)
 

@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title> Voravich Portfolio </title>
+
+    <!-- Link to Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!--Links to External CSS files-->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body>
+<body class="bg-purple-300">
     <!-- Header with Navigation elements-->
-    <header>
-        <h1> Voravich Silapachairueng</h1>
+    <header class="container mx-auto">
+        <h1 class="text-9xl p-8 mb-8"> Voravich Silapachairueng</h1>
         <nav>
-            <ul class="nav-style">
+            <ul class="grid grid-cols-2 grid-rows-2 lg:grid-cols-4">
                 <li><a href="#about-me-section">About Me</a></li>
                 <li><a href="#work-section">Work</a></li>
                 <li><a href="#contact-section">Contact Me</a></li>
@@ -25,15 +29,19 @@
     </header>
 
     <!--Main Content-->
-    <main>
-        <section class="bio section-style">
-            <h2 id = "about-me-section">About Me</h2>
-            <div class="work-layout">
-                <figure class="figure-wrapper">
-                    <img class="portrait" 
+    <main class="container mx-auto grid grid-rows-10 gap-24">
+        <!-- About Me Section-->
+        <section class="row-span-4 m-12 lg:inline-flex">
+            <div class="lg:w-1/5">
+                <h2 class="text-7xl border-b-4 border-indigo-500 mb-12 lg:border-none lg:mr-12" id="about-me-section">About Me</h2>
+            </div>
+            
+            <div class="lg:border-l-4 lg:pl-12 lg:w-4/5">
+                <figure class="figure-wrapper h-auto w-full border border-slate-50 mb-12 md:mb-0 md:float-left md:w-1/2 md:mr-12">
+                    <img
                         src="./assets/images/portfoliopic.jpg" 
                         alt="Picture of Voravich Silapachairueng">
-                    <figcaption class="portrait-caption">Voravich Silapachairueng</figcaption>
+                    <figcaption class="portrait-caption ">Voravich Silapachairueng</figcaption>
                 </figure>
                 <p>My name is Voravich Silapachairueng. I was born in Thailand, but lived
                     in the United States for most of my life. I had studied Cognitive Science
@@ -50,63 +58,76 @@
                 </p>
             </div>
         </section>
-        <section class="works section-style">
-            <h2 id = "work-section">Work</h2>
-            <div class="work-layout">
-                <figure class="figure-wrapper">
-                    <a href="https://voravichs.github.io/1st-module-challenge/">
-                        <img class="work-panel"
-                        src="./assets/images/digital-marketing-meeting.jpg" 
-                        alt="four businesspeople meeting at a table, all looking at an obscured sheet of paper">
-                        <figcaption class="work-panel-caption"> Code Refactor</figcaption>      
+        <!-- Works Section-->
+        <section class="row-span-5 m-12 lg:inline-flex">
+            <div class="lg:w-1/5">
+                <h2 class="text-7xl border-b-4 border-indigo-500 mb-12 lg:border-none lg:mr-12" id="work-section">Work</h2>
+            </div>            
+            <div class="lg:border-l-4 lg:pl-12 lg:w-4/5">
+                <a href="#">
+                    <figure class="figure-wrapper">
+                        <img class="contrast-50 hover:contrast-150 mb-12 md:w-full md:h-auto md:border md:border-slate-50"
+                        src="./assets/images/moody-gamer.png" 
+                        alt="a website named Moody Gamer">
+                        <figcaption class="caption"> Moody Gamer</figcaption>  
+                    </figure>    
+                </a>
+
+                <div class="grid grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-12">
+                    <a href="#">
+                    <figure class="figure-wrapper">
+                        <img class="contrast-50 hover:contrast-100 w-full h-auto border border-slate-50"
+                        src="./assets/images/password-gen.PNG" 
+                        alt="a website that generates a password">
+                        <figcaption class="caption"> Password Generator</figcaption>  
+                    </figure>    
                     </a>
-                </figure>
-                <div class="work-panel-row">
+
                     <a href="#">
                         <figure class="figure-wrapper">
-                            <img class="work-panel small-panel"
-                            src="./assets/images/digital-marketing-meeting.jpg" 
-                            alt="four businesspeople meeting at a table, all looking at an obscured sheet of paper">
-                            <figcaption class="work-panel-caption"> Calculator</figcaption>  
+                            <img class="contrast-50 hover:contrast-100 w-full h-auto border border-slate-50"
+                                src="./assets/images/code-quiz.png" 
+                                alt="a website where you can take a quiz about code">
+                            <figcaption class="caption"> Code Quiz</figcaption>  
                         </figure>    
                     </a>
+
                     <a href="#">
                         <figure class="figure-wrapper">
-                            <img class="work-panel small-panel"
-                                src="./assets/images/digital-marketing-meeting.jpg" 
-                                alt="four businesspeople meeting at a table, all looking at an obscured sheet of paper">
-                            <figcaption class="work-panel-caption"> Code Quiz</figcaption>  
+                            <img class="contrast-50 hover:contrast-100 w-full h-auto border border-slate-50"
+                                src="./assets/images/work-day.png" 
+                                alt="a website where you can schedule your work day">
+                            <figcaption class="caption"> Work Day Scheduler</figcaption>  
                         </figure>    
                     </a>
-                </div>
-                <div class="work-panel-row">
+
                     <a href="#">
                         <figure class="figure-wrapper">
-                            <img class="work-panel small-panel"
-                                src="./assets/images/digital-marketing-meeting.jpg" 
-                                alt="four businesspeople meeting at a table, all looking at an obscured sheet of paper">
-                            <figcaption class="work-panel-caption"> Work Day Scheduler</figcaption>  
+                            <img class="contrast-50 hover:contrast-100 w-full h-auto border border-slate-50"
+                                src="./assets/images/weather-dash.PNG" 
+                                alt="a website that shows a weather dashboard">
+                            <figcaption class="caption"> Weather Dashboard</figcaption>  
                         </figure>    
                     </a>
-                    <a href="#">
-                        <figure class="figure-wrapper">
-                            <img class="work-panel small-panel"
-                                src="./assets/images/digital-marketing-meeting.jpg" 
-                                alt="four businesspeople meeting at a table, all looking at an obscured sheet of paper">
-                            <figcaption class="work-panel-caption"> Weather Dashboard</figcaption>  
-                        </figure>    
-                    </a>
-                </div>    
+                </div>                
+                
+  
             </div>         
         </section>
-        <section class="section-style">
-            <h2 id="contact-section">Contact Me</h2>
-                <ul class="contact-style">
+        <!-- Contact Me Section-->
+        <section class="row-span-1 m-12 lg:inline-flex">
+            <div class="lg:w-1/5">
+                <h2 class="text-7xl border-b-4 border-indigo-500 mb-12 lg:border-none lg:mr-12" id="about-me-section" id="contact-section">Contact Me</h2>
+            </div>
+            <div class="lg:border-l-4 lg:pl-12 lg:w-4/5">
+                <ul class="flex justify-evenly underline">
                     <li><a href="#">555-555-5555</a></li>
                     <li><a href="https://github.com/voravichs">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/voravich-silapachairueng/">LinkedIn</a></li>
                     <li><a href="#">Twitter</a></li>
                 </ul>
+            </div>
+            
         </section>
     </main>
 </body>

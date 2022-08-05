@@ -20,18 +20,6 @@ body {
     color: var(--peach);
 }
 
-h1 {
-    font-size: 6rem;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-h2 {
-    font-size: 5rem;
-    border-bottom: solid var(--indigo);
-    color: var(--indigo);
-    margin-bottom: 2rem;
-}
 
 a {
     text-decoration: none;
@@ -45,15 +33,6 @@ header {
     background-color: var(--nightsky);
     width: 100%;
     text-align: center;
-}
-
-.nav-style {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1rem 5rem;
-    margin-bottom: 5rem;
 }
 
 nav li {
@@ -70,26 +49,8 @@ main {
     background-color: var(--nightsky);
 }
 
-.section-style {
-    margin-block: 6rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.bio p {
-    margin-left: 2rem;
-}
-
 .figure-wrapper {
     position: relative;
-    
-}
-
-.portrait {
-    height: fit-content;
-    width: 100%;
-    border: solid 0.5rem var(--peach);
-    margin-bottom: 3rem;
 }
 
 .portrait-caption {
@@ -103,30 +64,11 @@ main {
     transition: all 0.6s ease;
 }
 
-figure:hover .portrait-caption {
+figure:hover .portrait-caption{
     opacity: .8;
 }
 
-
-/*=== WORKS STYLE ===*/
-.works {
-    flex-wrap: wrap;
-}
-
-.work-panel {
-    flex: 0 0 100%;
-    height: 35rem;
-    width: 100%;
-    border: solid 4px var(--peach);
-    filter: sepia(0.6);
-    margin-bottom: 1rem;
-}
-
-.work-panel:hover {
-    filter:sepia(0);
-}
-
-.work-panel-caption {
+.caption {
     position: absolute;
     bottom: 4rem;
     text-align: center;
@@ -134,32 +76,21 @@ figure:hover .portrait-caption {
     color: var(--nightsky);
     padding: 1rem;
     font-size: 3rem;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+figure:hover .caption{
+    opacity: .9;
 }
 
 
 /*=== CONTACTS STYLE ===*/
-.contact-style {
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-}
 
-.contact-style li {
-    padding-bottom: 1.5rem;
-    padding-right: 2rem;
-}
-
-.contact-style a {
-    text-decoration: underline 3px var(--peach);
-}
-
-
-
+/* Archived: Replaced with Tailwind Queries
+/
 /*=== MEDIA QUERY: TABLET ===*/
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     h1 {
         padding-inline: 10%;
     }
@@ -197,11 +128,11 @@ figure:hover .portrait-caption {
         flex-direction: row;
         justify-content: space-evenly;
     }
-}
+} */
 
 
 /*=== MEDIA QUERY: DESKTOP ===*/
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     
     .section-style {
         flex-direction: row;
@@ -224,4 +155,4 @@ figure:hover .portrait-caption {
     .work-layout {
         width: 65%;
     }
-}
+} */
